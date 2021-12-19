@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Resolutions for Video</title>
+
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/noto.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-external="Slides/Resolution/001.html"></section>
+				<section data-external="Slides/Resolution/002.html"></section>
+			</div>
+		</div>
+		<div class="relative">
+			<div class="absolute text-white hover:text-yellow-400 bottom-12 left-12">
+				<a href="http://www.gokhanaydin.net">
+					<img class="rounded-full w-12 h-12 transform transition duration-500 hover:scale-125" src="Slides/Soraouji/images/80bit_soraouji.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="https://www.google.com/search?q=soraouji" class="absolute font-light text-white hover:text-yellow-400 bottom-16 transform transition duration-500 left-28">
+					Soraouji
+				</a>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+
+				// Make reveal.js aware of the size change
+				
+				// Factor of the display size that should remain empty around
+				// the content
+				margin: 0.04,
+				
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 2.0,
+				history: true,
+				mouseWheel: true,
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/zoom-js/zoom.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{
+						src: 'plugin/external/external.js',
+						condition: function() {
+							return !!document.querySelector( '[data-external],[data-external-replace]' );
+						}
+					},
+					
+				]
+			});
+		</script>
+	</body>
+</html>

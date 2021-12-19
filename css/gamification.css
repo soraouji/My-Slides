@@ -1,0 +1,20 @@
+.ikiyeBol{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.bolunen{
+    flex: 1;
+}
+
+.solayasla{
+    text-align: left;
+}
+.sagayasla{
+    text-align: right;
+}
+.uzunText{
+    font-size: 1.4rem !important;
+    text-align: left;
+    padding: 10px 0 0 20px !important;
+}

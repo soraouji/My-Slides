@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Vector vs Raster</title>
+
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/DPI.css">
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+	</head>
+	<body>
+		
+		<div class="reveal">
+			<div class="slides">
+				
+				<section data-external="Slides/DPIPPI/001.html"></section>
+				<section data-external="Slides/DPIPPI/002.html"></section>
+				<section data-external="Slides/DPIPPI/003.html"></section>
+			</div>
+		</div>
+		<div class="relative">
+			<div class="absolute text-white hover:text-yellow-400 bottom-12 left-12">
+				<a href="http://www.gokhanaydin.net">
+					<img class="rounded-full w-12 h-12 transform transition duration-500 hover:scale-125" src="Slides/Soraouji/images/80bit_soraouji.jpg" alt="">
+				</a>
+			</div>
+			<div class="">
+				<a href="https://www.google.com/search?q=soraouji" class="absolute font-light text-white hover:text-yellow-400 bottom-16 transform transition duration-500 left-28">
+					Soraouji
+				</a>
+			</div>
+			
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width: 960,
+				height: 700,
+				transition: "slide",
+				backgroundTransition: "slide",
+				mouseWheel: true,
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/zoom-js/zoom.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{
+						src: 'plugin/external/external.js',
+						condition: function() {
+							return !!document.querySelector( '[data-external],[data-external-replace]' );
+						}
+					},
+					
+				]
+			});
+		</script>
+	</body>
+</html>

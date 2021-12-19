@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Reveal.js presentation template | Academic Reveal Template</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Reveal.js presentation template" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Reveal.js presentation template running with Jekyll hosted on GitHub Pages." />
+<meta property="og:description" content="Reveal.js presentation template running with Jekyll hosted on GitHub Pages." />
+<link rel="canonical" href="https://maehr.github.io/revealjs-presentation-template/" />
+<meta property="og:url" content="https://maehr.github.io/revealjs-presentation-template/" />
+<meta property="og:site_name" content="Academic Reveal Template" />
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"Reveal.js presentation template","url":"https://maehr.github.io/revealjs-presentation-template/","description":"Reveal.js presentation template running with Jekyll hosted on GitHub Pages.","name":"Academic Reveal Template","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/revealjs-presentation-template/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/revealjs-presentation-template/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/revealjs-presentation-template/favicon-16x16.png" />
+  <link rel="manifest" href="/revealjs-presentation-template/site.webmanifest" />
+
+  <link rel="stylesheet" href="/revealjs-presentation-template/assets/css/style.css?v=d348fe94fe99ade7099e0a44afc458d5702c79b9">
+  <link rel="stylesheet" href="/revealjs-presentation-template/assets/vendor/reveal.js/css/reveal.css" />
+  
+  <link rel="stylesheet" href="/revealjs-presentation-template/assets/vendor/reveal.js/css/theme/serif.css" id="theme" />
+  
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/revealjs-presentation-template/assets/vendor/reveal.js/lib/css/zenburn.css" />
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '/revealjs-presentation-template/assets/vendor/reveal.js/css/print/pdf.css' : '/revealjs-presentation-template/assets/vendor/reveal.js/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown=""><textarea data-template="">
+  
+### revealjs-presentation-template
+
+- Click on [Use the template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) or [fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) this [repo](https://github.com/maehr/revealjs-presentation-template).
+- `git submodule add -f https://github.com/hakimel/reveal.js/ assets/vendor/reveal.js`
+- `git commit -a`.
+- Activate [GitHub Pages](https://pages.github.com/) in repository settings and set [source](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) to `master branch`.
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+### Run it locally
+
+```bash
+git submodule add -f https://github.com/hakimel/reveal.js/ assets/vendor/reveal.js
+gem install jekyll bundler
+bundle exec jekyll serve
+```
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+## Headings
+
+```markdown
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+```
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+## Emphasis
+
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+## Links
+
+[I'm an inline-style link](https://www.google.com). [I'm an inline-style link with title](https://www.google.com "Google's Homepage"). [I'm a reference-style link][Arbitrary case-insensitive reference text]. [I'm a relative reference to a repository file](index.md). [You can use numbers for reference-style link definitions][1] Or leave it empty and use the [link text itself].
+
+URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com or &lt;http://www.example.com&gt;.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+## Images
+
+Here's our logo (hover to see the title text):
+
+Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+### Code and syntax highlight
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+```
+No language indicated, so no syntax highlighting.
+But let's throw in a <b>tag</b>.
+```
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+## Tables I
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+## Tables II
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+### Blockquotes
+
+&gt; Blockquotes are very handy in email to emulate reply text.
+&gt; This line is part of the same quote.
+
+&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+## Inline HTML
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+
+## Inline LaTeX
+
+When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+</textarea></section>
+
+<section data-markdown=""><textarea data-template="">
+  
+### YouTube Videos
+
+<iframe width="840" height="480" src="https://www.youtube.com/embed/HUBNt18RFbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+Just copy and paste the embedded code from [YouTube](https://www.youtube.com/).
+
+</textarea></section>
+
+    </div>
+  </div>
+
+  <script src="/revealjs-presentation-template/assets/vendor/reveal.js/js/reveal.js"></script>
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+
+      // Display presentation control arrows
+      controls: true,
+
+      // Help the user learn the controls by providing hints, for example by
+      // bouncing the down arrow when they first encounter a vertical slide
+      controlsTutorial: true,
+
+      // Determines where controls appear, "edges" or "bottom-right"
+      controlsLayout: 'bottom-right',
+
+      // Visibility rule for backwards navigation arrows; "faded", "hidden"
+      // or "visible"
+      controlsBackArrows: 'faded',
+
+      // Display a presentation progress bar
+      progress: true,
+
+      // Display the page number of the current slide
+      slideNumber: false,
+
+      // Add the current slide number to the URL hash so that reloading the
+      // page/copying the URL will return you to the same slide
+      hash: false,
+
+      // Push each slide change to the browser history. Implies `hash: true`
+      history: true,
+
+      // Enable keyboard shortcuts for navigation
+      keyboard: true,
+
+      // Enable the slide overview mode
+      overview: true,
+
+      // Vertical centering of slides
+      center: false,
+
+      // Enables touch navigation on devices with touch input
+      touch: true,
+
+      // Loop the presentation
+      loop: false,
+
+      // Change the presentation direction to be RTL
+      rtl: false,
+
+      // See https://github.com/hakimel/reveal.js/#navigation-mode
+      navigationMode: 'default',
+
+      // Randomizes the order of slides each time the presentation loads
+      shuffle: false,
+
+      // Turns fragments on and off globally
+      fragments: true,
+
+      // Flags whether to include the current fragment in the URL,
+      // so that reloading brings you to the same fragment position
+      fragmentInURL: false,
+
+      // Flags if the presentation is running in an embedded mode,
+      // i.e. contained within a limited portion of the screen
+      embedded: false,
+
+      // Flags if we should show a help overlay when the questionmark
+      // key is pressed
+      help: true,
+
+      // Flags if speaker notes should be visible to all viewers
+      showNotes: false,
+
+      // Global override for autoplaying embedded media (video/audio/iframe)
+      // - null: Media will only autoplay if data-autoplay is present
+      // - true: All media will autoplay, regardless of individual setting
+      // - false: No media will autoplay, regardless of individual setting
+      autoPlayMedia: null,
+
+      // Global override for preloading lazy-loaded iframes
+      // - null: Iframes with data-src AND data-preload will be loaded when within
+      //   the viewDistance, iframes with only data-src will be loaded when visible
+      // - true: All iframes with data-src will be loaded when within the viewDistance
+      // - false: All iframes with data-src will be loaded only when visible
+      preloadIframes: null,
+
+      // Number of milliseconds between automatically proceeding to the
+      // next slide, disabled when set to 0, this value can be overwritten
+      // by using a data-autoslide attribute on your slides
+      autoSlide: 0,
+
+      // Stop auto-sliding after user input
+      autoSlideStoppable: true,
+
+      // Use this method for navigation when auto-sliding
+      autoSlideMethod: Reveal.navigateNext,
+
+      // Specify the average time in seconds that you think you will spend
+      // presenting each slide. This is used to show a pacing timer in the
+      // speaker view
+      defaultTiming: 120,
+
+      // Enable slide navigation via mouse wheel
+      mouseWheel: false,
+
+      // Hide cursor if inactive
+      hideInactiveCursor: true,
+
+      // Time before the cursor is hidden (in ms)
+      hideCursorTime: 5000,
+
+      // Hides the address bar on mobile devices
+      hideAddressBar: true,
+
+      // Opens links in an iframe preview overlay
+      // Add `data-preview-link` and `data-preview-link="false"` to customise each link
+      // individually
+      previewLinks: false,
+
+      // Transition speed
+      transitionSpeed: 'default', // default/fast/slow
+
+      // Transition style for full page slide backgrounds
+      backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+      // Number of slides away from the current that are visible
+      viewDistance: 3,
+
+      // Parallax background image
+      parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+      // Parallax background size
+      parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+      // Number of pixels to move the parallax background per slide
+      // - Calculated automatically unless specified
+      // - Set to 0 to disable movement along an axis
+      parallaxBackgroundHorizontal: null,
+      parallaxBackgroundVertical: null,
+
+      // The display mode that will be used to show slides
+      display: 'block',
+
+      
+        transition: 'slide',
+      
+      // Optional reveal.js plugins
+      dependencies: [{
+          src: '/revealjs-presentation-template/assets/vendor/reveal.js/lib/js/classList.js',
+          condition: function () {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: '/revealjs-presentation-template/assets/vendor/reveal.js/plugin/markdown/marked.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '/revealjs-presentation-template/assets/vendor/reveal.js/plugin/markdown/markdown.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '/revealjs-presentation-template/assets/vendor/reveal.js/plugin/highlight/highlight.js',
+          async: true,
+          condition: function () {
+            return !!document.querySelector('pre code');
+          },
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: '/revealjs-presentation-template/assets/vendor/reveal.js/plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: '/revealjs-presentation-template/assets/vendor/reveal.js/plugin/notes/notes.js',
+          async: true
+        }
+      ]
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
+
