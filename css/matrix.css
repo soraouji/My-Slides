@@ -7084,7 +7084,7 @@ html.print-pdf .aria-status {
 .theme-color-sea-yellow {
     --theme-background-color: #297477;
     background-color: #297477;
-    background-image: -webkit-linear-gradient(top, #6cc9cd 0%, #297477 100%);
+    background-image: -webkit-linear-gradient(top, #6cc9cd 0%, #294b77 100%);
     background-image: linear-gradient(to bottom, #6cc9cd 0%, #297477 100%);
 }
 .theme-color-sea-yellow body {
